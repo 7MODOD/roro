@@ -1,0 +1,50 @@
+/* الأماكن الجديدة لتحكم بعرض الصور */
+.mySlides {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out; /* تأثير الانتقال: fade */
+  }
+  
+  img {
+    width: 100%;
+    max-height: 800px;
+  }
+  
+  /* ستايل جديد لعناصر العرض */
+  .slideshow-container {
+    max-width: 800px;
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+  }
+  
+  .message {
+    font-size: 30px; /* تحديث حجم الخط */
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #ff4081; /* تحديث لون النص إلى وردي مائل للأحمر */
+    font-style: italic;
+    transition: color 0.5s ease-in-out; /* تأثير الانتقال: تغيير لون النص */
+  }
+  
+  .signature {
+    font-size: 18px;
+    font-style: italic;
+    color: #666;
+    transition: color 0.5s ease-in-out; /* تأثير الانتقال: تغيير لون النص */
+  }
+  
+  /* تحديث تأثير الانتقال للصور */
+  .fade {
+    animation: fade 1.5s ease-in-out;
+  }
+  
+  @keyframes fade {
+    from {
+      opacity: 0.4;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
